@@ -68,7 +68,7 @@ a:hover, a:active {
   margin-top: 20px;
 }
 .pagetext {
-  width: 51%;
+  width: 51  %;
   margin-top: 20px;
   font: 25px Libre Baskerville;
 }
@@ -88,6 +88,11 @@ a:hover, a:active {
 
 .diptych__both {
   width: 49%;
+  height: 100%;
+}
+
+.triptych_thrice {
+  width: 30%;
   height: 100%;
 }
 
