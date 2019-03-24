@@ -11,7 +11,7 @@ body {
      color: #000;
      font-size: 12px;
      line-height: 1.4;
-     font-family: Helvetica, Arial, sans-serif;
+      font-family: "Libre Baskerville", Helvetica, Arial, sans-serif;
 }
 
 html {
@@ -37,12 +37,9 @@ img {
   max-height: 100%;
 }
 
-a { text-decoration: none;
-    font-style: italic;
-    font-weight: 900;
-    color: black;
-    display:inline-block;
-    margin-right: 5px;
+a {
+  text-decoration: underline;
+  color: #000000;
 }
 
 /* Each state */
@@ -59,17 +56,29 @@ a:hover, a:active {
   height: auto;
   margin-top: 50px;
   font: 150px Libre Baskerville;
+  font-kerning: normal;
+  /* letter-spacing: -10px; --
+  --font kernaling works but very minute for Baskerville fonts
+  --letter spacing here effects .toppagetext below name*/
   margin-bottom: 160px;
 }
 
 .emailstyle {
   font: 20px Libre Baskerville;
-  font-weight: 900;
   margin-top: 20px;
 }
+
 .pagetext {
-  width: 51  %;
+  width: 100%;
   margin-top: 20px;
+  font-kerning: normal;
+  font: 20px Libre Baskerville;
+}
+
+.toppagetext {
+  width: 50%;
+  margin-top: 20px;
+  font-kerning: normal;
   font: 25px Libre Baskerville;
 }
 
@@ -77,7 +86,7 @@ a:hover, a:active {
   display: block;
   width: 100%;
   height: auto;
-  margin-bottom: 220px;
+  margin-bottom: 250px;
 }
 
 .diptych__flex {
@@ -87,7 +96,7 @@ a:hover, a:active {
 }
 
 .diptych__both {
-  width: 49%;
+  width: 49.5%;
   height: 100%;
 }
 
@@ -103,15 +112,14 @@ a:hover, a:active {
 }
 
 .fourplex__each {
-  height: 48%;
-  width: 48%;
-  margin-top: 38px;
+  height: 49.5%;
+  width: 49.5%;
+  margin-top: 10px;
 }
 
 .landscape__flex {
   display: flex;
   flex-direction: column;
-
 }
 
 .landscape__each {
@@ -122,10 +130,9 @@ a:hover, a:active {
 .footertext__flex {
   display: flex;
   justify-content: space-between;
-  margin-top: -10px;
 }
 
 .footertext {
   font: 20px Libre Baskerville;
-  font-weight: 900;
+  margin-top: -25px;
 }
