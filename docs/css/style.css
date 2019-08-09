@@ -60,7 +60,7 @@ a:hover, a:active {
   /* letter-spacing: -10px; --
   --font kernaling works but very minute for Baskerville fonts
   --letter spacing here effects .toppagetext below name*/
-  margin-bottom: 60px;
+  margin-bottom: 50px;
 }
 
 .emailstyle {
@@ -94,21 +94,23 @@ a:hover, a:active {
 }
 
 .toppagetext {
-  width: 50%;
-  margin-top: 20px;
+  width: 100%;
+  margin-top: 5px;
   font-kerning: normal;
   font: 25px Libre Baskerville;
 }
 
 .displaycontainer {
   display: block;
-  width: 100%;
+  max-width: 100%;
   height: auto;
-  margin-bottom: 100px;
+  margin-bottom: 75px;
 }
 
 .displaycontainer2 {
   display: block;
+  margin-left: auto;
+  margin-right: auto;
   width: 100%;
   height: auto;
   margin-bottom: 2px;
@@ -123,10 +125,28 @@ a:hover, a:active {
   margin-bottom: 200px;
 }
 
+.displaycontainer4 {
+  display: block;
+  max-width: 100%;
+  height: auto;
+  margin-bottom: 200px;
+}
+
 .diptych__flex {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+}
+
+.monotych__once {
+  width: 100%;
+  height: 100%;
+}
+
+.monotych__once2 {
+  width: 100%;
+  height: 100%;
+  margin-bottom: -5px;
 }
 
 .diptych__both {
